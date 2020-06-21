@@ -1,0 +1,13 @@
+.comments-list {
+  margin-top: 88px;
+  display: flex;
+  justify-content: center;
+}
+
+.comments-list__container {
+  padding-top: 192px;
+  display: flex;
+  justify-content: flex-end;
+  width: 79%;
+  flex-wrap: wrap;
+}

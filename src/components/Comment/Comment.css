@@ -1,0 +1,106 @@
+.comment {
+  --voting-container-height: 93px;
+  --voting-arrow-padding: 15px;
+
+  display: flex;
+  width: 100%;
+  /* margin-left: 45px; */
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+/* Voting style */
+p.votes {
+  font: Bold 18px/24px 'Open Sans';
+  color: #FFFFFF;
+}
+
+.arrow {
+  position: relative;
+  transform: translateX(2px);
+}
+
+.arrow::before {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #D5BDFD;
+  width: 10px;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+
+.arrow::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #D5BDFD;
+  width: 10px;
+  border-radius: 3px;
+  transform: translateX(5px) rotate(45deg);
+}
+
+.comment__voting__container {
+  height: calc(var(--voting-container-height) - var(--voting-arrow-padding));
+  width: 45px;
+  border-radius: 50px;
+  border: 2px solid #D5BDFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--voting-arrow-padding) 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.comment__voting__container__down-arrow {
+  transform: rotate(180deg);
+  cursor: pointer;
+  height: 9px;
+  width: 20px;
+  content: "";
+}
+
+.comment__voting__container__up-arrow {
+  cursor: pointer;
+  height: 9px;
+  width: 20px;
+  content: "";
+}
+
+
+/* Comment card style */
+.comment__card {
+  width: 100%;
+  min-height: 218px;
+  border: 1px solid #707070;
+  box-shadow: 0px 8px 20px #0000004D;
+  background: #F7F7F7 0% 0% no-repeat padding-box;
+  margin-left: 21px;
+}
+
+.comment__card__title {
+  font: bold 25px/34px 'Open Sans';
+  color: #141C3A;
+  margin: 35px 0 0 40px;
+  height: 55px;
+}
+
+.comment__card__txt {
+  font: 20px/34px 'Open Sans';
+  color: #141C3A;
+  margin: 8px 29px 0 40px;
+}
+
+.comment__card__btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 29px 27px 0;
+}
+
+.comment__card__btn button {
+  width: 156px;
+  height: 49px;
+  color: #7510F7;
+  font: Bold 20px/27px 'Open Sans';
+}
