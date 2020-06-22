@@ -3,7 +3,7 @@ import './NewPost.css'
 
 export default (props) => {
   const handleClick = () => {
-    props.setFormState({visible: true, newComment: true})
+    props.setFormState({...props.formState, visible: true, newComment: true})
   }
 
   return (
